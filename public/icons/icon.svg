@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A8F6A" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdf4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#042f2e" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#brandGrad)" />
+
+  <!-- Subtle glow inner ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#ffffff" stroke-width="4" stroke-opacity="0.2" />
+
+  <!-- Pharmacy Medical Cross with modern rounded caps and drop shadow -->
+  <g filter="url(#shadow)">
+    <!-- Vertical bar -->
+    <rect x="216" y="116" width="80" height="280" rx="28" fill="url(#crossGrad)" />
+    <!-- Horizontal bar -->
+    <rect x="116" y="216" width="280" height="80" rx="28" fill="url(#crossGrad)" />
+    <!-- Center circular accent -->
+    <circle cx="256" cy="256" r="42" fill="#0A8F6A" />
+    <!-- Leaf / Herbal capsule symbol inside center -->
+    <path d="M256 226 C274 238, 278 262, 256 286 C234 262, 238 238, 256 226 Z" fill="#ffffff" />
+  </g>
+
+  <!-- Clean NK Monogram lettering -->
+  <text x="256" y="445" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="3">NEW KESHRI</text>
+  <text x="256" y="475" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="20" fill="#a7f3d0" text-anchor="middle" letter-spacing="4">MEDICAL STORE</text>
+</svg>

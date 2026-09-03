@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Newsreader", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-paper: #F9F7F2;
+  --color-paper-card: #FFFFFF;
+  --color-paper-subtle: #F2EFE9;
+  --color-paper-contrast: #EAE5DB;
+
+  --color-ink: #1A1A1A;
+  --color-ink-light: #333330;
+  --color-ink-muted: #5E5B54;
+  --color-ink-faint: #8E8A80;
+
+  --color-editorial-border: #E5E0D8;
+  --color-editorial-border-strong: #C4BEB2;
+
+  --color-apothecary: #1A4329;
+  --color-apothecary-dark: #12301D;
+  --color-apothecary-light: #EBF3EE;
+  --color-apothecary-muted: #3D6B50;
+
+  --color-gold: #9C7B38;
+  --color-gold-light: #F7F3E9;
+  --color-terracotta: #A64B2A;
+}
+
+@layer base {
+  body {
+    background-color: #F9F7F2;
+    color: #1A1A1A;
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, .font-serif, .editorial-heading {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Editorial Aesthetic Utility Styles */
+.editorial-rule {
+  border-color: #E5E0D8;
+}
+
+.dark .editorial-rule {
+  border-color: #2E2D28;
+}
+
+.editorial-tag {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.6875rem;
+  font-weight: 700;
+}

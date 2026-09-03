@@ -1,0 +1,6 @@
+{
+  "name": "New Keshri Medical Store",
+  "description": "Trusted pharmacy in Arwal, Bihar offering 100% genuine medicines, healthcare devices, surgical supplies, and fast WhatsApp home delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
